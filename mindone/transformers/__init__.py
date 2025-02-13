@@ -5,7 +5,7 @@ from .image_processing_base import ImageProcessingMixin
 from .image_processing_utils import BaseImageProcessor
 from .image_utils import ImageFeatureExtractionMixin
 from .modeling_utils import MSPreTrainedModel
-from .models.auto import AutoImageProcessor, AutoModel, AutoModelForCausalLM, AutoModelForMaskedLM
+from .models.auto import AutoConfig, AutoImageProcessor, AutoModel, AutoModelForCausalLM, AutoModelForMaskedLM
 from .models.bert import (
     BertForMaskedLM,
     BertForMultipleChoice,
