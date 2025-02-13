@@ -24,7 +24,7 @@ import mindspore as ms
 from mindspore import Tensor, ops, mint
 from PIL.Image import Image
 from transformers import LlamaTokenizerFast
-from transformers.processing_utils import ProcessorMixin
+from mindone.transformers.processing_utils import ProcessorMixin
 
 from janus.models.image_processing_vlm import VLMImageProcessor
 from janus.utils.conversation import get_conv_template
