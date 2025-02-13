@@ -27,7 +27,7 @@ from transformers.dynamic_module_utils import get_class_from_dynamic_module, res
 from transformers.utils import CONFIG_NAME, cached_file, copy_func, extract_commit_hash, logging
 
 from ...utils import is_mindspore_available, requires_backends
-from .configuration_auto import AutoConfig, model_type_to_module_name, replace_list_option_in_docstrings
+from transformers.models.auto.configuration_auto import AutoConfig, model_type_to_module_name, replace_list_option_in_docstrings
 
 if is_mindspore_available():
     from ...generation import GenerationMixin
