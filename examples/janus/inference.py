@@ -6,8 +6,7 @@ __dir__ = os.path.dirname(os.path.abspath(__file__))
 mindone_lib_path = os.path.abspath(os.path.join(__dir__, "../../"))
 sys.path.insert(0, mindone_lib_path)
 
-from transformers import AutoConfig
-from mindone.transformers import AutoModelForCausalLM
+from mindone.transformers import AutoConfig, AutoModelForCausalLM
 from janus.models import MultiModalityCausalLM, VLChatProcessor
 from janus.utils.io import load_pil_images, set_model_param_dtype
 from mindone.utils.seed import set_random_seed
