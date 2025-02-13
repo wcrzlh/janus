@@ -47,7 +47,6 @@ from transformers.tokenization_utils_base import (
 
 # fixme
 from transformers.utils import (
-    CHAT_TEMPLATE_NAME,
     PROCESSOR_NAME,
     PushToHubMixin,
     cached_file,
@@ -58,7 +57,7 @@ from transformers.utils import (
     logging,
 )
 
-from .utils import TensorType, add_model_info_to_auto_map, add_model_info_to_custom_pipelines
+from .utils import CHAT_TEMPLATE_NAME, TensorType, add_model_info_to_auto_map, add_model_info_to_custom_pipelines
 
 logger = logging.get_logger(__name__)
 
