@@ -23,9 +23,10 @@ import numpy as np
 import mindspore as ms
 from PIL import Image
 # TODO: replace with mindone.transformers
-from transformers import AutoImageProcessor, PretrainedConfig
-from transformers.image_processing_utils import BaseImageProcessor, BatchFeature
-from transformers.image_utils import to_numpy_array
+from transformers import PretrainedConfig
+from mindone.transformers import AutoImageProcessor
+from mindone.transformers.image_processing_utils import BaseImageProcessor, BatchFeature
+from mindone.transformers.image_utils import to_numpy_array
 from transformers.utils import logging
 
 logger = logging.get_logger(__name__)
