@@ -380,7 +380,7 @@ class ProcessorMixin(PushToHubMixin):
             class_name = AUTO_TO_BASE_CLASS_MAPPING.get(class_name, class_name)
             if isinstance(class_name, tuple):
                 proper_class = tuple(getattr(transformers_module, n) for n in class_name if n is not None)
-            elif "ImageProcessor" in class_name:
+            elif "ImageProcess" in class_name:
                 sub_path = os.path.abspath(os.path.dirname(__file__))
                 sub_path = str(Path(sub_path).parent)
                 sys.path.insert(0, sub_path)
