@@ -1,6 +1,11 @@
 import argparse
+import os, sys
 import mindspore as ms
 from time import time
+__dir__ = os.path.dirname(os.path.abspath(__file__))
+mindone_lib_path = os.path.abspath(os.path.join(__dir__, "../../"))
+sys.path.insert(0, mindone_lib_path)
+
 from mindspore import mint, ops, Tensor
 from mindone.transformers import AutoModelForCausalLM
 import numpy as np
