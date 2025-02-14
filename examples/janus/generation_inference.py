@@ -2,7 +2,7 @@ import argparse
 import mindspore as ms
 from time import time
 from mindspore import mint, ops, Tensor
-from transformers import AutoModelForCausalLM
+from mindone.transformers import AutoModelForCausalLM
 import numpy as np
 import os
 import PIL.Image
