@@ -22,9 +22,9 @@ from mindspore import mint, ops, nn, Tensor
 from addict import Dict
 from transformers import (
     AutoConfig,
-    AutoModelForCausalLM,
     LlamaConfig,
 )
+from mindone.transformers import AutoModelForCausalLM
 from mindone.transformers import (
     LlamaForCausalLM,
 )
